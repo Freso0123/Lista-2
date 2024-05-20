@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0, user-scalable=no">
+
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+
+    
+    <link rel="stylesheet" href="style">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="manifest.json">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="fondo">
+        <div>
+            <H1 class="titulo">Mis pendientes</H1>
+        </div>
+        
+        <div>
+            <p class="fecha" id="fecha"></p>
+        </div>
+    </main>
+  
+    <section class="box">
+        <div>
+            <input class="ingTex" type="text" placeholder="Escribe aquí" id="NuevaTarea">
+        </div>
+
+        <div>
+            <button onclick="agregar()" class="agregar">+</button>
+        </div>
+    </section>
+    
+    <section class="box2">
+        <div>
+            <h2 class="titulo2">Por hacer</h2>
+        </div>
+        
+        <div class="porhacer">
+             <!---
+            <div class="subBox2">
+                <input class="ckeck" type="checkbox" id="act">
+                <label class="text" for="act">Preparar la presentación</label>
+            </div>
+
+            <div class="subBox2">
+                <input class="ckeck" type="checkbox" id="act2">
+                <label class="text" for="act2">Hacer ejercicio</label>
+            </div>
+            --->
+        </div>
+    </section>
+
+
+    <section class="box3">
+        <div>
+            <h2 class="titulo3">Terminado</h2>
+        </div>
+
+        <div class="terminado">
+            <div class="subBox3">
+                <input class="ckeck2" type="checkbox" id="act3">
+                <label class="text2" for="act3">Hacer ejercicio</label>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
+
+
+
+
+<script  type="text/javascript" src="funciones.js"></script>
+
+<Script type="text/javascript">
+    //eventos de navegador
+    window.addEventListener('load', init);
+
+</Script>
